@@ -208,7 +208,6 @@ function list(req, res) {
 
 //update
 function update(req, res) {
-  // const { orderId } = req.params;
   let order = res.locals.order;
   const { data } = req.body;
   order = { ...data, id: order.id };
